@@ -1,8 +1,10 @@
 # Application Name
 
-#### Brief description of application, Date of current version
+Pizza Parlor
 
-#### By Cody Fritz,
+#### 06/19/20
+
+#### By Cody Fritz
 
 ## Description
 
@@ -14,6 +16,13 @@
 4. Open .zip with program of choice (Winrar/7zip confirmed working)
 5. Extract folder to location of choice(such as desktop)
 6. Run index.html with browser of choice, confirmed working on Firefox and Chrome.
+
+## Specs
+
+User can select size of pizza (Small=$5.00, Medium=$6.50, Large=$8.00)
+User can select toppings for pizza(Pepperoni=$0.50, Sausage=$0.55, Bacon=$0.60, Extra Cheese=$0.40)
+User can get price for pizza($6.50)
+Price changes depending on toppings and size(Medium Pep/Cheese -> \$7.40)
 
 ## Known Bugs
 
@@ -32,4 +41,4 @@ Bootstrap | jQuery
 
 MIT
 
-Copyright (c) 2016 **Cody Fritz**
+Copyright (c) 2020 **Cody Fritz**
