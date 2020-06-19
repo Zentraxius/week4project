@@ -25,6 +25,7 @@ $(document).ready(function () {
     // console.log(pizzaPie); // Debug
 
     let resultHold = pizzaPie.calculate();
+    console.log(resultHold)
     // console.log(resultHold + " this is result");
 
     $(".nameResult").text("Hello, " + clientName + ", thank you for ordering!"); // Takes name, thanks name.
@@ -44,50 +45,21 @@ function Pizza(size, toppings) {
 ///Brute Force Solution/// (note-failing)
 
 Pizza.prototype.calculate = function () {
-  let size = this.size
-  let toppings = this.toppings
-  // console.log(toppings)
-  // console.log(size)
-let pizzaSizePrice = []
-let toppingsPrice = []
+let pizzaTotal = 0;
 ////////////////////////////////////////
-  if (size === "smallSize") {
-    pizzaSizePrice.push(5);
-  } else if (size === "mediumSize") {
-    pizzaSizePrice.push(6.5);
-  } else if (size === "largeSize") {
-    pizzaSizePrice.push(8);
+  if (this.size === "smallSize") {
+    pizzaTotal += 5;
+  } else if (this.size === "mediumSize") {
+    pizzaTotal += 6.5;
+  } else if (this.size === "largeSize") {
+    pizzaTotal += 8;
   }
 ////////////////////////////////////////
-for (let index = 0; index <= toppings.length; index ++) {
-  if (index.toString().includes("pepperoni")){
-  toppingsPrice.push(0.5)
-  console.log('test1')
 
-} else if (index.toString().includes("sausage")) {
-  toppingsPrice.push(0.55)
-  console.log('test1')
 
-} else if (index.toString().includes("bacon")) {
-  toppingsPrice.push(0.65)
-  console.log('test1')
 
-} else if (index.toString().includes("steak")) {
-  toppingsPrice.push(0.75)
-  console.log('test1')
 
-} else if (index.toString().includes("extraCheese")) {
-  toppingsPrice.push(0.40)
-  console.log('test1')
-
-} else if (index.toString().includes("ham")) {
-  toppingsPrice.push(0.60)
-  console.log('test1')
-}
-
-};
-console.log(toppingsPrice)
-console.log(pizzaSizePrice)
+return pizzaTotal
 }
 
 // let pepperoni = 0.5;
@@ -99,3 +71,37 @@ console.log(pizzaSizePrice)
 
 // Take size parameter and convert into price for mediumSize, if small, convert to price
 // take array, loop through each object inside array and convert price
+
+// let size = this.size
+// let toppings = this.toppings
+// console.log(toppings)
+// // console.log(size)
+// let pizzaSizePrice = []
+// let toppingsPrice = []
+
+// for (let index=0; index<=this.toppings.length; index++) {
+  //   if (index.toString().includes("pepperoni")){
+  //   toppingsPrice.push(0.5)
+  //   console.log('test1')
+  
+  // } else if (index.toString().includes("sausage")) {
+  //   toppingsPrice.push(0.55)
+  //   console.log('test1')
+  
+  // } else if (index.toString().includes("bacon")) {
+  //   toppingsPrice.push(0.65)
+  //   console.log('test1')
+  
+  // } else if (index.toString().includes("steak")) {
+  //   toppingsPrice.push(0.75)
+  //   console.log('test1')
+  
+  // } else if (index.toString().includes("extraCheese")) {
+  //   toppingsPrice.push(0.40)
+  //   console.log('test1')
+  
+  // } else if (index.toString().includes("ham")) {
+  //   toppingsPrice.push(0.60)
+  //   console.log('test1')
+  // }
+  
