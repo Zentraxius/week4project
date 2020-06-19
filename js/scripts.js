@@ -29,6 +29,7 @@ $(document).ready(function () {
     // console.log(resultHold + " this is result");
 
     $(".nameResult").text("Hello, " + clientName + ", thank you for ordering!"); // Takes name, thanks name.
+    $('.orderTotal').text('$' + resultHold + " is your total, have a great day!")
   });
 });
 
@@ -54,11 +55,8 @@ let pizzaTotal = 0;
   } else if (this.size === "largeSize") {
     pizzaTotal += 8;
   }
+  pizzaTotal += this.toppings.length * 0.5 // Original solution was 40 lines of code and didn't work. This works. I hate it.
 ////////////////////////////////////////
-
-
-
-
 return pizzaTotal
 }
 
