@@ -1,7 +1,11 @@
   /////////////////////////////
  /// User Interface Logic. ///
 ///////////////////////////// 
-
+$(document).ready(function(){
+  $('form#orderPizza').submit(function(event) {
+    event.preventDefault();
+  })
+})
   ///////////////////////////
  ////  Business Logic.  ////
 ///////////////////////////
