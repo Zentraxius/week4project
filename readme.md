@@ -10,6 +10,8 @@ Pizza Parlor
 
 ## Setup/Installation Requirements
 
+You can also click here! https://zentraxius.github.io/week4project/index.html
+
 1. From github ( https://github.com/Zentraxius ) navigate to "Repositories"
 2. Select project from list
 3. Click "Clone or download v" Download Zip
