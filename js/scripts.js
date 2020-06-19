@@ -29,7 +29,7 @@ $(document).ready(function () {
     // console.log(resultHold + " this is result");
 
     $(".nameResult").text("Hello, " + clientName + ", thank you for ordering!"); // Takes name, thanks name.
-    $('.orderTotal').text('$' + resultHold + " is your total, have a great day!")
+    $('.orderTotal').text('$' + resultHold + " is your total, have a great day!") // Posts order total
   });
 });
 
@@ -45,61 +45,18 @@ function Pizza(size, toppings) {
 
 ///Brute Force Solution/// (note-failing)
 
-Pizza.prototype.calculate = function () {
-let pizzaTotal = 0;
+Pizza.prototype.calculate = function () { // The magic
+let pizzaTotal = 0; // Hold this number
 ////////////////////////////////////////
-  if (this.size === "smallSize") {
-    pizzaTotal += 5;
+  if (this.size === "smallSize") { // Bite sized noms
+    pizzaTotal += 5; // If small adds 5
   } else if (this.size === "mediumSize") {
-    pizzaTotal += 6.5;
+    pizzaTotal += 6.5; // If medium adds 6.5
   } else if (this.size === "largeSize") {
-    pizzaTotal += 8;
+    pizzaTotal += 8; // If large adds 8
   }
-  pizzaTotal += this.toppings.length * 0.5 // Original solution was 40 lines of code and didn't work. This works. I hate it.
+  pizzaTotal += this.toppings.length * 0.5 // Replaced over 30 lines of code with this 1 line.  I'm kind of upset, I spent 4 hours on those 30 lines.
 ////////////////////////////////////////
-return pizzaTotal
+return pizzaTotal // When prototype is finished being used, the returned value is the pizzaTotal variable
 }
 
-// let pepperoni = 0.5;
-// let sausage = 0.55;
-// let bacon = 0.65;
-// let steak = 0.75;
-// let extraCheese = 0.4;
-// let ham = 0.6;
-
-// Take size parameter and convert into price for mediumSize, if small, convert to price
-// take array, loop through each object inside array and convert price
-
-// let size = this.size
-// let toppings = this.toppings
-// console.log(toppings)
-// // console.log(size)
-// let pizzaSizePrice = []
-// let toppingsPrice = []
-
-// for (let index=0; index<=this.toppings.length; index++) {
-  //   if (index.toString().includes("pepperoni")){
-  //   toppingsPrice.push(0.5)
-  //   console.log('test1')
-  
-  // } else if (index.toString().includes("sausage")) {
-  //   toppingsPrice.push(0.55)
-  //   console.log('test1')
-  
-  // } else if (index.toString().includes("bacon")) {
-  //   toppingsPrice.push(0.65)
-  //   console.log('test1')
-  
-  // } else if (index.toString().includes("steak")) {
-  //   toppingsPrice.push(0.75)
-  //   console.log('test1')
-  
-  // } else if (index.toString().includes("extraCheese")) {
-  //   toppingsPrice.push(0.40)
-  //   console.log('test1')
-  
-  // } else if (index.toString().includes("ham")) {
-  //   toppingsPrice.push(0.60)
-  //   console.log('test1')
-  // }
-  
