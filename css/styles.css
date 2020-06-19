@@ -10,3 +10,11 @@ body {
 .toppingsCol {
   border: 3px solid black;
 }
+
+.col-md-5 {
+  border: 2px solid black;
+}
+
+.row {
+  display: flex;
+}
