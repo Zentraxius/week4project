@@ -19,8 +19,10 @@ Pizza Parlor
 
 ## Specs
 
+User inputs their name to mark pizza as theirs (Eg order for Dave Rambo)
 User can select size of pizza (Small=$5.00, Medium=$6.50, Large=$8.00)
 User can select toppings for pizza(Pepperoni=$0.50, Sausage=$0.55, Bacon=$0.60, Extra Cheese=$0.40)
+Submit button to indicate user is done with selections and to generate price
 User can get price for pizza($6.50)
 Price changes depending on toppings and size(Medium Pep/Cheese -> \$7.40)
 
