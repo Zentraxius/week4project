@@ -11,45 +11,36 @@
   <script src="js/scripts.js"></script>
 </head>
 
-<div class="jumbotron" style="background: transparent !important;">
-  <h1>The Right Choice</h1>
-  <h2>Pizza Parlor</h2>
-</div>
-
-
-
 <body>
+  <div class="jumbotron" style="background: transparent !important;">
+    <h1>The Right Choice</h1>
+    <h2>Pizza Parlor</h2>
+  </div>
   <form id="orderPizza">
     <div class="form-group">
-
       <label for="userName">Please enter your name.</label>
       <br>
       <input type="text" required class="userName">
       <br>
-
       <label for="pizzaSize">How hungry are you?</label>
-
       <div class="radio">
         <label for="pizzaSize">
           <input type="radio" name="pizzaSize" value="smallSize">
           I'm feeling peckish, give me a small.
         </label>
       </div>
-
       <div class="radio">
         <label for="pizzaSize">
           <input type="radio" name="pizzaSize" value="mediumSize">
           I'm hungry, I could use a medium.
         </label>
       </div>
-
       <div class="radio">
         <label for="pizzaSize">
           <input type="radio" name="pizzaSize" value="largeSize">
           I am starving, give me a large.
         </label>
       </div>
-
       <div class="row">
         <div class="col-md-5" style="font-size: 40px"><br>&#9814;&#9816;&#9815;&#9813;&#9812;&#9815;&#9816;&#9814;
           <br>&#9817;&#9817;&#9817;&#9817;&#9817;&#9817;&#9817;&#9817;</div>
@@ -68,7 +59,6 @@
           <br>&#9823;&#9823;&#9823;&#9823;&#9823;&#9823;&#9823;&#9823;</div>
       </div>
     </div>
-
     <button type="submit" class="orderPizzaBtn">Submit Order!</button>
   </form>
   <p class="nameResult"></p>

@@ -7,15 +7,12 @@ $(document).ready(function () {
     let clientName = $(".userName").val(); 
     let pizzaSize = $("input:radio[name=pizzaSize]:checked").val(); 
     let toppings = []; 
-
     $("input:checkbox[name=toppings]:checked").each(function () {
       const toppingsList = $(this).val(); 
       toppings.push(toppingsList); 
     }); 
-
     let pizzaPie = new Pizza(pizzaSize, toppings);
     let resultHold = pizzaPie.calculate();
-
     $(".nameResult").text("Hello, " + clientName + ", thank you for ordering!");
     $(".orderTotal").text(
       "$" + resultHold + " is your total, have a great day!"
@@ -26,9 +23,7 @@ $(document).ready(function () {
 ///////////////////////////
 ////  Business Logic.  ////
 ///////////////////////////
-
 function Pizza(size, toppings) {
-
   this.size = size;
   this.toppings = toppings;
 }
